@@ -20,5 +20,10 @@ namespace MVCFirstRun.Controllers
         {
             return Redirect("https://www.google.com");
         }
+
+        public ActionResult GoToSpecificUrl(string url)
+        {
+            return Redirect(url);
+        }
     }
 }

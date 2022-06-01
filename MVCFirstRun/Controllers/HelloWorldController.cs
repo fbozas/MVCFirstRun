@@ -5,9 +5,9 @@ namespace MVCFirstRun.Controllers
     public class HelloWorldController : Controller
     {
         // GET: HelloWorld
-        public string Index()
+        public ActionResult Index()
         {
-            return "Hello World";
+            return View("InitialView");
         }
     }
 }

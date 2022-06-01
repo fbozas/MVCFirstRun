@@ -7,7 +7,7 @@ namespace MVCFirstRun.Controllers
         // GET: HelloWorld
         public ActionResult Index()
         {
-            return View("InitialView");
+            return View();
         }
     }
 }

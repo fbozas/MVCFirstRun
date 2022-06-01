@@ -1,4 +1,5 @@
-﻿using System.Web.Mvc;
+﻿using MVCFirstRun.Models;
+using System.Web.Mvc;
 
 namespace MVCFirstRun.Controllers
 {
@@ -24,6 +25,17 @@ namespace MVCFirstRun.Controllers
         public ActionResult GoToSpecificUrl(string url)
         {
             return Redirect(url);
+        }
+
+        public ActionResult LoadCustomer()
+        {
+            Customer customer = new Customer()
+            {
+                ID = 1,
+                Name = "Nikos Pappas"
+            };
+
+            return View(customer);
         }
     }
 }

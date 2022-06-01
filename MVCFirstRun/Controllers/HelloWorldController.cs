@@ -37,5 +37,16 @@ namespace MVCFirstRun.Controllers
 
             return View(customer);
         }
+
+        public ActionResult GetUrlElements()
+        {
+            var controller = RouteData.Values["controller"];
+            var action = RouteData.Values["action"];
+            var message = $"{controller} {action}";
+
+            ViewBag.Message = message;
+
+            return View();
+        }
     }
 }

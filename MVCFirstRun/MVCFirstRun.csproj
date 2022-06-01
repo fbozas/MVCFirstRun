@@ -169,6 +169,7 @@
     <Content Include="Views\HelloWorld\Index.cshtml" />
     <Content Include="Views\HelloWorld\LoadData.cshtml" />
     <Content Include="Views\HelloWorld\LoadCustomer.cshtml" />
+    <Content Include="Views\HelloWorld\GetUrlElements.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

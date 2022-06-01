@@ -15,5 +15,10 @@ namespace MVCFirstRun.Controllers
             ViewBag.Message = "Hello from method";
             return View();
         }
+
+        public ActionResult GoToUrl()
+        {
+            return Redirect("https://www.google.com");
+        }
     }
 }

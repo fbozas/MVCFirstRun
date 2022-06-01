@@ -9,5 +9,11 @@ namespace MVCFirstRun.Controllers
         {
             return View();
         }
+
+        public ActionResult LoadData()
+        {
+            ViewBag.Message = "Hello from method";
+            return View();
+        }
     }
 }

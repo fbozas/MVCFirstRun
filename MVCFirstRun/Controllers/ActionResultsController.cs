@@ -40,5 +40,15 @@ namespace MVCFirstRun.Controllers
         {
             return RedirectPermanent("https://www.google.com");
         }
+
+        public RedirectToRouteResult GoToIndexAction()
+        {
+            return RedirectToAction("Index");
+        }
+
+        public RedirectToRouteResult GoToContactAction()
+        {
+            return RedirectToAction("Contact", "Home");
+        }
     }
 }

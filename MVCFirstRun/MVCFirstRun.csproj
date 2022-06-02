@@ -173,6 +173,7 @@
     <Content Include="Views\HelloWorld\GetUrlElements.cshtml" />
     <Content Include="Views\ActionResults\Index.cshtml" />
     <Content Include="Views\ActionResults\ViewResultMethod.cshtml" />
+    <Content Include="Views\ActionResults\ConditionalMethod.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

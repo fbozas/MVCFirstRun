@@ -120,6 +120,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ActionResultsController.cs" />
     <Compile Include="Controllers\HelloWorldController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -170,6 +171,8 @@
     <Content Include="Views\HelloWorld\LoadData.cshtml" />
     <Content Include="Views\HelloWorld\LoadCustomer.cshtml" />
     <Content Include="Views\HelloWorld\GetUrlElements.cshtml" />
+    <Content Include="Views\ActionResults\Index.cshtml" />
+    <Content Include="Views\ActionResults\ViewResultMethod.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

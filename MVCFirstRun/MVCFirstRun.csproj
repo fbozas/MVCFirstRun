@@ -175,6 +175,8 @@
     <Content Include="Views\ActionResults\Index.cshtml" />
     <Content Include="Views\ActionResults\ViewResultMethod.cshtml" />
     <Content Include="Views\ActionResults\ConditionalMethod.cshtml" />
+    <Content Include="Views\Shared\ChildView.cshtml" />
+    <Content Include="Views\ActionResults\ShowChildViewResult.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

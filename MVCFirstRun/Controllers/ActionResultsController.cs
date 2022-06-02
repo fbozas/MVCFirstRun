@@ -77,5 +77,10 @@ namespace MVCFirstRun.Controllers
 
             return Json(customer, JsonRequestBehavior.AllowGet);
         }
+
+        public PartialViewResult ShowChildViewResult()
+        {
+            return PartialView();
+        }
     }
 }

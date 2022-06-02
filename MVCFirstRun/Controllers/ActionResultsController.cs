@@ -1,4 +1,5 @@
-﻿using System.Web.Mvc;
+﻿using MVCFirstRun.Models;
+using System.Web.Mvc;
 
 namespace MVCFirstRun.Controllers
 {
@@ -64,6 +65,17 @@ namespace MVCFirstRun.Controllers
         public FileResult GetImage()
         {
             return File(Server.MapPath("~/Images/beach.jpg"), "images/jpg");
+        }
+
+        public JsonResult ShowNewCustomer()
+        {
+            Customer customer = new Customer()
+            {
+                ID = 101,
+                Name = "Nikolas Bekas"
+            };
+
+            return Json(customer, JsonRequestBehavior.AllowGet);
         }
     }
 }

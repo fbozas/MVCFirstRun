@@ -55,5 +55,15 @@ namespace MVCFirstRun.Controllers
         {
             return RedirectToRoute("AboutUs");
         }
+
+        public FileResult ShowCSSContent()
+        {
+            return File(Server.MapPath("~/Content/Site.css"), "text/css");
+        }
+
+        public FileResult GetImage()
+        {
+            return File(Server.MapPath("~/Images/beach.jpg"), "images/jpg");
+        }
     }
 }

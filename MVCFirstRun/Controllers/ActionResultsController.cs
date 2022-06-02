@@ -30,5 +30,15 @@ namespace MVCFirstRun.Controllers
 
             return View();
         }
+
+        public RedirectResult GoToUrl() // Returns http status code 302
+        {
+            return Redirect("https://www.google.com");
+        }
+
+        public RedirectResult GoToUrlPermanently() // Returns http status code 301 (More SEO friendly)
+        {
+            return RedirectPermanent("https://www.google.com");
+        }
     }
 }

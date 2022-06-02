@@ -50,5 +50,10 @@ namespace MVCFirstRun.Controllers
         {
             return RedirectToAction("Contact", "Home");
         }
+
+        public RedirectToRouteResult GoToAspecifcRoute()
+        {
+            return RedirectToRoute("AboutUs");
+        }
     }
 }

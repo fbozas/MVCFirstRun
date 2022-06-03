@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<div>
+    <h1>Results are as bellow: </h1>
+    <br /> FullName: @ViewBag.FullName
+    <br /> Age: @ViewBag.Age
+    <br /> Age next year: @ViewBag.AgeNextYear
+</div>
+
+<h2>Approach 1</h2>
+
+@{
+    Html.BeginForm("Calculate", "FormDemo", FormMethod.Post);
+}
+
+<p>
+    FullName: @Html.TextBox("fullName")
+</p>
+
+<p>
+    Date of Birth: <input type="date" name="dateOfBirth" />
+</p>
+
+<button type="submit">Submit</button>
+
+@{
+    Html.EndForm();
+}
+
+
+
+
+<h2>Approach 2</h2>
+
+
+@{
+    Html.BeginForm("CalculateTwo", "FormDemo", FormMethod.Post);
+}
+
+<p>
+    FullName: @Html.TextBox("fullNameTwo")
+</p>
+
+<p>
+    Date of Birth: <input type="date" name="dateOfBirthTwo" />
+</p>
+
+<button type="submit">Submit</button>
+
+@{
+    Html.EndForm();
+}

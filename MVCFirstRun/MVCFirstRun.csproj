@@ -123,6 +123,7 @@
     <Compile Include="Controllers\ActionResultsController.cs" />
     <Compile Include="Controllers\HelloWorldController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\StateManagementController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -177,6 +178,8 @@
     <Content Include="Views\ActionResults\ConditionalMethod.cshtml" />
     <Content Include="Views\Shared\ChildView.cshtml" />
     <Content Include="Views\ActionResults\ShowChildViewResult.cshtml" />
+    <Content Include="Views\StateManagement\Index.cshtml" />
+    <Content Include="Views\StateManagement\Destination.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

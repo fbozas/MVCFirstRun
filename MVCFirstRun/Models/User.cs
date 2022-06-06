@@ -1,10 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 namespace MVCFirstRun.Models
 {
-    public class User
+    public class User : IValidatableObject
     {
         [Required(ErrorMessage = "User Name is required")]
         [StringLength(15, ErrorMessage = "UserName cannot be more than 15 characters")]
@@ -46,5 +47,22 @@ namespace MVCFirstRun.Models
         [Display(Name = "Additional Comments")]
         public string AddtionalComments { get; set; }
         public string City { get; set; }
+
+        public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
+        {
+            ValidationResult vr = null;
+
+            if(City.ToLower() == "koridallos" && PostalCode != 18120)
+            {
+                vr = new ValidationResult("Invalid PostalCode fro Koridallos City");
+            }
+
+            if (City.ToLower() == "nikaia" && PostalCode != 18454)
+            {
+                vr = new ValidationResult("Invalid PostalCode fro Nikaia City");
+            }
+
+            return new List<ValidationResult>() { vr };
+        }
     }
 }

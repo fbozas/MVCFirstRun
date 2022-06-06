@@ -187,7 +187,7 @@
     <Content Include="Views\FormDemo\Index.cshtml" />
     <Content Include="Views\FormDemo\Create.cshtml" />
     <Content Include="Views\FormDemo\CreatePost.cshtml" />
-    <Content Include="Views\Valdation\SignUp.cshtml" />
+    <Content Include="Views\Validation\SignUp.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -3,7 +3,7 @@ using System.Web.Mvc;
 
 namespace MVCFirstRun.Controllers
 {
-    public class ValdationController : Controller
+    public class ValidationController : Controller
     {
         // GET: Valdation
         public ActionResult Index()

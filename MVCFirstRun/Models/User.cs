@@ -54,12 +54,12 @@ namespace MVCFirstRun.Models
 
             if(City.ToLower() == "koridallos" && PostalCode != 18120)
             {
-                vr = new ValidationResult("Invalid PostalCode fro Koridallos City");
+                vr = new ValidationResult("Invalid PostalCode for Koridallos City");
             }
 
             if (City.ToLower() == "nikaia" && PostalCode != 18454)
             {
-                vr = new ValidationResult("Invalid PostalCode fro Nikaia City");
+                vr = new ValidationResult("Invalid PostalCode for Nikaia City");
             }
 
             return new List<ValidationResult>() { vr };

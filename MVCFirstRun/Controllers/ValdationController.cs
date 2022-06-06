@@ -25,7 +25,7 @@ namespace MVCFirstRun.Controllers
                 return Content("Success!");
             }
 
-            return View();
+            return View(user);
         }
     }
 }

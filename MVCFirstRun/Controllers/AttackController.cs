@@ -18,9 +18,9 @@ namespace MVCFirstRun.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult CheckLoginCredentials(string UserName, string Password)
+        public ActionResult CheckLoginCredentials(FormCollection coll)
         {
-            if(UserName.Equals("takis123") && Password.Equals("123"))
+            if(coll["UserName"].Equals("takis123") && coll["Password"].Equals("123"))
             {
                 return View("Index");
             }

@@ -144,6 +144,7 @@
       <DependentUpon>CompanyModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Controllers\ActionResultsController.cs" />
+    <Compile Include="Controllers\AttackController.cs" />
     <Compile Include="Controllers\EmployeesController.cs" />
     <Compile Include="Controllers\FormDemoController.cs" />
     <Compile Include="Controllers\HelloWorldController.cs" />
@@ -243,6 +244,8 @@
     <Content Include="Views\Employees\Details.cshtml" />
     <Content Include="Views\Employees\Edit.cshtml" />
     <Content Include="Views\Employees\Index.cshtml" />
+    <Content Include="Views\Attack\Index.cshtml" />
+    <Content Include="Views\Attack\CheckLoginCredentials.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
